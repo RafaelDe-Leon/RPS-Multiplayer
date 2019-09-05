@@ -177,8 +177,8 @@ currentTurnRef.on("value", function(snapshot) {
         );
       }
 
-      // Shows yellow border around active player
-      $("#player1").css("border", "2px solid yellow");
+      // Shows green border around active player
+      $("#player1").css("border", "2px solid green");
       $("#player2").css("border", "1px solid black");
     } else if (currentTurn === 2) {
       // If its the current player's turn, tell them and show choices
@@ -194,8 +194,8 @@ currentTurnRef.on("value", function(snapshot) {
         );
       }
 
-      // Shows yellow border around active player
-      $("#player2").css("border", "2px solid yellow");
+      // Shows green border around active player
+      $("#player2").css("border", "2px solid green");
       $("#player1").css("border", "1px solid black");
     } else if (currentTurn === 3) {
       // Where the game win logic takes place then resets to turn 1
@@ -296,6 +296,7 @@ function getInGame() {
 // Game logic - Tried to space this out and make it more readable. Displays who won, lost, or tie game in result div.
 // Increments wins or losses accordingly.
 function gameLogic(player1choice, player2choice) {
+  
   var playerOneWon = function() {
     $("#result h2").text(playerOneData.name + " Wins!");
     if (playerNum === 1) {
