@@ -92,6 +92,7 @@ input {
 li {
     margin: 12px 0;
     font-size: 24px;
+    cursor: pointer;
 }
 .outcomes {
     position: absolute;
