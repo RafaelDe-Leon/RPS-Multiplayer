@@ -1,21 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RPS Multiplayer</title>
+    <!-- Reset CSS -->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- style css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <header>
+
+        <h1 class="text-center"> Rock Papper Scissors</h1>
+
+    </header>
+
+
+    <div class="contrainer">
+
+        <div class="row">
+            <div class="col-12 text-center" id="swap-zone"><input id="username" placeholder="Name" />
+                <button id="start">Start</button>
+            </div>
+        </div>
+        <div id="current-turn">
+            <h2></h2>
+        </div>
+
+        <div id="game-div">
+
+            <div class="row">
+                <div id="player1" class="col-md-4">
+                    <h3 id="player1-name">Player1</h3>
+                    <ul>
+                    </ul>
+                    <div id="player1-chosen"></div>
+                    <div class="outcomes">
+                        <div class="outcome-trackers" id="player1-wins"></div>
+                        <div class="outcome-trackers" id="player1-loses"></div>
+                    </div>
+
+                </div>
+
+                <div id="result" class="col-md-4">
+                    <h2></h2>
+                </div>
+
+                <div id="player2" class="col-md-4">
+                    <h3 id="player2-name">Player2</h3>
+                    <ul>
+
+                    </ul>
+                    <div id="player2-chosen"></div>
+                    <div class="outcomes">
+                        <div class="outcome-trackers" id="player2-wins"></div>
+                        <div class="outcome-trackers" id="player2-losses"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chat">
+                <div id="chat-messages"></div>
+                <div id="chat-bar">
+                    <input id="chat-input" />
+                    <button id="chat-send">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 
+    <form>
+        <label for="number">Enter a number</label>
+        <input type="number" , id="number">
+        <div>Here is the number you typed: </div>
+        <div id="numberDisplay"></div>
+    </form> -->
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 
 
 
-
-
-
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <!-- JavaScript File -->
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>

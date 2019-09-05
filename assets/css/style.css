@@ -1,0 +1,57 @@
+body {
+    background-color: lightgrey;
+}
+
+header {
+    background-color: darkgrey;
+}
+
+h1 {
+    /* Visual */
+    padding: 15px;
+
+    /* Typography */
+    font-size: 46px;
+}
+
+h2 {
+    /* Typography */
+    font-size: 24px;
+}
+
+input {
+    background-color: white;
+}
+
+
+/*----------------------------------------------------- */
+
+
+#swap-zone {
+    width: 75%;
+    margin: 25px auto;
+    text-align: center;
+}
+
+#swap-zone input {
+    width: 200px;
+    height: 30px;
+
+    font-size: 30px;
+}
+
+#swap-zone button {
+    width: 100px;
+    height: 36px;
+
+    font-size: 22px;
+    vertical-align: top;
+}
+
+/* ------------------------------------------ */
+
+#current-turn {
+    width: 75%;
+    margin: 15px auto;
+    text-align: center;
+}
