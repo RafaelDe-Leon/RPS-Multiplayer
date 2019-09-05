@@ -35,7 +35,8 @@ input {
 
 #swap-zone input {
     width: 200px;
-    height: 30px;
+    height: 36px;
+    
 
     font-size: 30px;
 }
@@ -54,4 +55,106 @@ input {
     width: 75%;
     margin: 15px auto;
     text-align: center;
+}
+
+#game-div {
+    /* text-align: center; */
+    margin-left: 200px;
+}
+
+#player1,
+#result,
+#player2 {
+    /* position: relative; */
+    /* display: inline-block; */
+
+    box-sizing: border-box;
+    height: 200px;
+    margin: 2%;
+    /* background-color: red; */
+
+    border: 1px solid black;
+}
+
+#player1-name,
+#player2-name {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+#player1-chosen,
+#player2-chosen {
+    margin-top: 25px;
+    font-size: 60px;
+}
+
+li {
+    margin: 12px 0;
+    font-size: 24px;
+}
+.outcomes {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    text-align: center;
+}
+
+.outcome-trackers {
+    display: inline-block;
+}
+
+#result h2 {
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+
+/* 
+
+CHATBOX
+
+*/
+
+#chat {
+    position: relative;
+    width: 600px;
+    height: 150px;
+
+    padding: 10px;
+    margin: 20px auto;
+}
+
+#chat-messages {
+    height: 150px;
+    overflow: auto;
+    padding: 5px;
+    background-color: white;
+}
+
+#chat-bar {
+    /* position: absolute; */
+    bottom: 10px;
+}
+
+#chat-input {
+    width: 550px;
+}
+
+#chat-send {
+    width: 50px;
+    
+}
+
+.player1 {
+    color: #419d78;
+}
+
+.player2 {
+    color: #2d3047;
+}
+
+.player0 {
+    color: black;
+    background-color: black;
 }
