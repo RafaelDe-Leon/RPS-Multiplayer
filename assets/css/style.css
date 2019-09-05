@@ -69,12 +69,12 @@ input {
     /* display: inline-block; */
 
     box-sizing: border-box;
-    height: 200px;
+    height: 300px;
     margin: 2%;
     /* background-color: red; */
-
     border: 1px solid black;
 }
+
 
 #player1-name,
 #player2-name {
@@ -87,12 +87,18 @@ input {
 #player2-chosen {
     margin-top: 25px;
     font-size: 60px;
+    
 }
 
 li {
     margin: 12px 0;
     font-size: 24px;
     cursor: pointer;
+    padding: 5px;
+}
+
+li:hover {
+    background-color: white;
 }
 .outcomes {
     position: absolute;
